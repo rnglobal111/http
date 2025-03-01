@@ -47,4 +47,5 @@ def show_logs():
         return "<pre>" + file.read() + "</pre>"
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=8000)
+    app.run(host="0.0.0.0", port=443, debug=True)
+
