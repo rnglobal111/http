@@ -3,6 +3,10 @@ import socket
 
 app = Flask(__name__)
 
+@app.route("/a")
+def health_check():
+    return "OK", 200
+
 # Função para obter o reverso DNS do IP (se disponível)
 def get_reverse_dns(ip):
     try:
